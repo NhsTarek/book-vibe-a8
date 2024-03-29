@@ -14,8 +14,9 @@ const Book = () => {
 
 
 
-    const handleRead = () =>{
+    const handleRead = (book) =>{
         toast("you have read that book")
+        console.log(book)
     }
 
 
@@ -56,7 +57,7 @@ const Book = () => {
                         <h5> {rating}</h5>
                     </div>
                 <div className="flex gap-2">
-                    <button onClick={handleRead} className="btn">Read</button>
+                    <button onClick={() => handleRead(book)} className="btn">Read</button>
                     <button className="btn">Wishlist</button>
                 </div>
             </div>

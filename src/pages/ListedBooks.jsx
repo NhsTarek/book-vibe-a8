@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import NavBar from "../Components/NavBar";
 import { useState } from "react";
 
@@ -16,7 +16,7 @@ const ListedBooks = () => {
 
                 <Link
                 onClick={() => setTabIndex(0)}
-                //  to=''
+                 to=''
                  className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${tabIndex === 0 ? 'border border-b-0' : 'border-b'} rounded-t-lg dark:border-gray-600 dark:text-gray-900`}>
                     <span>Read Books</span>
                 </Link>
@@ -24,7 +24,7 @@ const ListedBooks = () => {
 
                 <Link
                 onClick={() => setTabIndex(1)}
-                //  to={`wishlist`} 
+                 to={`wishlist`} 
                  className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${tabIndex === 1 ? 'border border-b-0' : 'border-b'} rounded-t-lg dark:border-gray-600 dark:text-gray-900`}>
             
                     <span>Wishlist Books</span>
@@ -32,6 +32,7 @@ const ListedBooks = () => {
 
                
             </div>
+            <Outlet></Outlet>
         </div>
     );
 };
