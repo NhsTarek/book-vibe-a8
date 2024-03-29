@@ -8,6 +8,8 @@ import ListedBooks from './pages/ListedBooks.jsx'
 import PagesToRead from './pages/PagesToRead.jsx'
 import MainLayout from './Layouts/MainLayout.jsx'
 import Book from './pages/Book.jsx'
+import Authors from './pages/Authors.jsx'
+import PublishingSchedule from './pages/PublishingSchedule.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
       {
         path:'/pagestoread',
         element:<PagesToRead></PagesToRead>,
+      },
+      {
+        path:'/authors',
+        element:<Authors></Authors>,
+      },
+      {
+        path:'/schedule',
+        element:<PublishingSchedule></PublishingSchedule>,
       },
     ]
   },

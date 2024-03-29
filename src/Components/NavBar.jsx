@@ -20,11 +20,11 @@ const NavBar = () => {
                             <NavLink to='/pagestoread' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold' : 'font-bold'}>
                                 Pages to Read
                             </NavLink>
-                            <NavLink className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold' : 'font-bold'}>
-                                Top rated books
+                            <NavLink className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold' : 'font-bold'}> Author's
+                            
                             </NavLink>
-                            <NavLink className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold' : 'font-bold'}>
-                                Book of the week
+                            <NavLink to='/schedule' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold' : 'font-bold'}>
+                            Publishing Schedule
                             </NavLink>
 
                         </ul>
@@ -42,11 +42,11 @@ const NavBar = () => {
                         <NavLink to='/pagestoread' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold' : 'font-bold'}>
                             Pages to Read
                         </NavLink>
-                        <NavLink className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold' : 'font-bold'}>
-                            Top rated books
+                        <NavLink to='/authors' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold' : 'font-bold'}>
+                            Author's
                         </NavLink>
-                        <NavLink className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold' : 'font-bold'}>
-                            Book of the week
+                        <NavLink to='/schedule' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold' : 'font-bold'}>
+                            Publishing Schedule
                         </NavLink>
 
                     </ul>
