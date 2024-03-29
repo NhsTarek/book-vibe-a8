@@ -1,12 +1,19 @@
 import { useLoaderData } from "react-router-dom";
 import Hero from "../Components/Hero";
 import Books from "../Components/Books";
+import { useEffect, useState } from "react";
 
 
 
 const Home = () => {
-    const books = useLoaderData()
-    console.log(books)
+    const [books, setBooks] = useState([]);
+    useEffect(() =>{
+        fetch('books.json')
+        .then(res => res.json())
+        .then(data => setBooks(data))
+
+    },[])
+   
     return (
         <div>
             <Hero></Hero>
