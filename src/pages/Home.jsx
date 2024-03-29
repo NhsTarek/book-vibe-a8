@@ -4,8 +4,8 @@ import NavBar from "../Components/NavBar";
 const Home = () => {
     return (
         <div>
-            <NavBar></NavBar>
             {/* Navbar */}
+            <h1>This is a homepage</h1>
         </div>
     );
 };
