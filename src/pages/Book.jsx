@@ -1,5 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { addToWishlist, saveBook } from "../utils";
+import { saveBook, addToRead, addToWishlist, getWishlist, removeFromWishlist, getRead } from "../utils";
+import toast from "react-hot-toast";
+
 
 
 
@@ -15,12 +17,21 @@ const Book = () => {
 
 
     const handleRead = (book) =>{
-     saveBook(book)
+        saveBook(book);
+        addToRead(book);
+        removeFromWishlist(book);
         
     }
 
     const handleWishlist = (book) => {
-        addToWishlist(book);
+        const readBooks = getRead();
+        const isRead = readBooks.some(readBook => readBook.id === book.id);
+        if (isRead) {
+            toast.error('Book is already in the Read list.');
+        } else {
+            addToWishlist(book);
+            
+        }
     }
 
 
