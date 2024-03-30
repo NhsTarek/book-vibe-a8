@@ -62,8 +62,3 @@ export const getRead = () => {
   return read;
 }
 
-export const removeFromWishlist = book => {
-    let wishlist = getWishlist();
-    wishlist = wishlist.filter(b => b.id !== book.id);
-    localStorage.setItem('wishlist', JSON.stringify(wishlist));
-  }

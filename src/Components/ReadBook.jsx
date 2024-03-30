@@ -33,7 +33,7 @@ const ReadBook = ({ r }) => {
                         </div>
                         <div className="flex gap-2 items-center">
                         <LuStickyNote />
-                        <h6>Page{totalPages}</h6>
+                        <h6>Page {totalPages}</h6>
                         </div>
                     </div>
                 <hr />

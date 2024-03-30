@@ -1,5 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { saveBook, addToRead, addToWishlist, getWishlist, removeFromWishlist, getRead } from "../utils";
+import { saveBook, addToRead, addToWishlist, getRead } from "../utils";
 import toast from "react-hot-toast";
 
 
@@ -19,7 +19,7 @@ const Book = () => {
     const handleRead = (book) =>{
         saveBook(book);
         addToRead(book);
-        removeFromWishlist(book);
+        // removeFromWishlist(book);
         
     }
 
