@@ -1,7 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { addToWishlist, saveBook } from "../utils";
 
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
 
 
 
@@ -15,8 +15,12 @@ const Book = () => {
 
 
     const handleRead = (book) =>{
-        toast("you have read that book")
-        console.log(book)
+     saveBook(book)
+        
+    }
+
+    const handleWishlist = (book) => {
+        addToWishlist(book);
     }
 
 
@@ -58,10 +62,10 @@ const Book = () => {
                     </div>
                 <div className="flex gap-2">
                     <button onClick={() => handleRead(book)} className="btn">Read</button>
-                    <button className="btn">Wishlist</button>
+                    <button onClick={() => handleWishlist(book)} className="btn">Wishlist</button>
                 </div>
             </div>
-            <ToastContainer />
+          
 
         </div>
     );
