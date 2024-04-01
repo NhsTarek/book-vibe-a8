@@ -8,6 +8,7 @@ import Authors from "../pages/Authors";
 import PublishingSchedule from "../pages/PublishingSchedule";
 import Wishlist from "../Components/Wishlist";
 import Read from "../Components/Read";
+import Error from "../pages/Error";
 
 export const router = createBrowserRouter([
     {
@@ -52,6 +53,10 @@ export const router = createBrowserRouter([
         {
           path:'/schedule',
           element:<PublishingSchedule></PublishingSchedule>,
+        },
+        {
+          path:'/error',
+          element:<Error></Error>,
         },
       ]
     },

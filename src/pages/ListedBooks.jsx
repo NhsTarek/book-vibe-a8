@@ -4,19 +4,26 @@ import { useState } from "react";
 
 const ListedBooks = () => {
     const [tabIndex, setTabIndex] = useState(0)
+
+    
     return (
         <div className="container mx-auto">
             <div className="text-center bg-[#F3F3F3] shadow-xl rounded-xl p-5 my-5">
                 <h1 className="font-extrabold text-3xl">Books</h1>
             </div>
 
-            <div className="dropdown dropdown-bottom">
-                <div tabIndex={0} role="button" className="btn m-1">Click</div>
-                <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a>Item 1</a></li>
-                    <li><a>Item 2</a></li>
-                </ul>
+
+            <div className="text-center">
+                <div className="dropdown dropdown-bottom">
+                    <div tabIndex={0} role="button" className="btn bg-[#23BE0A] m-1">Sort By</div>
+                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Rating</a></li>
+                        <li><a>Number of Pages</a></li>
+                        <li><a>Publisher</a></li>
+                    </ul>
+                </div>
             </div>
+
 
             <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap dark:bg-gray-100 dark:text-gray-800">
 

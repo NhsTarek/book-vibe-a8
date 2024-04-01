@@ -11,21 +11,24 @@ const NavBar = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </div>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 flex gap-4">
-                            <NavLink to='/' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold' : 'font-bold'}>
-                                Home
-                            </NavLink>
-                            <NavLink to='/listedbooks' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold' : 'font-bold'}>
-                                Listed Books
-                            </NavLink>
-                            <NavLink to='/pagestoread' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold' : 'font-bold'}>
-                                Pages to Read
-                            </NavLink>
-                            <NavLink className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold' : 'font-bold'}> Author's
-                            
-                            </NavLink>
-                            <NavLink to='/schedule' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold' : 'font-bold'}>
+                        <NavLink to='/' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold btn' : 'font-bold btn'}>
+                            Home
+                        </NavLink>
+                        <NavLink to='/listedbooks' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold btn' : 'font-bold btn'}>
+                            Listed Books
+                        </NavLink>
+                        <NavLink to='/pagestoread' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold btn' : 'font-bold btn'}>
+                            Pages to Read
+                        </NavLink>
+                        <NavLink to='/authors' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold btn' : 'font-bold btn'}>
+                            Author's
+                        </NavLink>
+                        <NavLink to='/schedule' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold btn' : 'font-bold btn'}>
                             Publishing Schedule
-                            </NavLink>
+                        </NavLink>
+                        <NavLink to='/error' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold btn' : 'font-bold btn'}>
+                        404 Page
+                        </NavLink>
 
                         </ul>
                     </div>
@@ -33,20 +36,23 @@ const NavBar = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 flex gap-4">
-                        <NavLink to='/' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold' : 'font-bold'}>
+                        <NavLink to='/' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold btn' : 'font-bold btn'}>
                             Home
                         </NavLink>
-                        <NavLink to='/listedbooks' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold' : 'font-bold'}>
+                        <NavLink to='/listedbooks' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold btn' : 'font-bold btn'}>
                             Listed Books
                         </NavLink>
-                        <NavLink to='/pagestoread' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold' : 'font-bold'}>
+                        <NavLink to='/pagestoread' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold btn' : 'font-bold btn'}>
                             Pages to Read
                         </NavLink>
-                        <NavLink to='/authors' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold' : 'font-bold'}>
+                        <NavLink to='/authors' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold btn' : 'font-bold btn'}>
                             Author's
                         </NavLink>
-                        <NavLink to='/schedule' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold' : 'font-bold'}>
+                        <NavLink to='/schedule' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold btn' : 'font-bold btn'}>
                             Publishing Schedule
+                        </NavLink>
+                        <NavLink to='/error' className={({ isActive }) => isActive ? 'text-[#23BE0A] font-bold btn' : 'font-bold btn'}>
+                        404 Page
                         </NavLink>
 
                     </ul>

@@ -1,6 +1,7 @@
 import { CiLocationOn } from "react-icons/ci";
 import { BsPeople } from "react-icons/bs";
 import { LuStickyNote } from "react-icons/lu";
+import { Link } from "react-router-dom";
 
 
 const ReadBook = ({ r }) => {
@@ -44,7 +45,7 @@ const ReadBook = ({ r }) => {
                     <div className="bg-[#FFF3E0] rounded-3xl p-3">
                     <h6> Rating: {rating}</h6>
                     </div>
-                    <button className="btn rounded-3xl bg-[#23BE0A] text-white">View details</button>
+                    <Link to={`/book/${r.id}`} className="btn rounded-3xl bg-[#23BE0A] text-white">View details</Link>
                 </div>
 
             </div>
