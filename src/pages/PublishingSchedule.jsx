@@ -3,6 +3,9 @@
 const PublishingSchedule = () => {
     return (
         <div className="container mx-auto my-10">
+            <div className="text-center my-5 font-bold">
+               <h3>Stay updated about when your favorite book will be published!!</h3>
+            </div>
             <div className="overflow-x-auto">
                 <table className="table table-zebra">
                     {/* head */}

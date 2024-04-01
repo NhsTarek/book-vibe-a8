@@ -6,7 +6,7 @@ import image4 from '../assets/images/images4.jpg';
 const Authors = () => {
     return (
         <div className="container mx-auto my-9">
-            <h1 className="text-center my-5">Author of the week</h1>
+            <h1 className="text-center my-5 font-bold">Author of the week</h1>
             <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {/* Author Card 1 */}
                 <div className="bg-white rounded-lg shadow-md overflow-hidden">
